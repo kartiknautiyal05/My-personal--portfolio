@@ -1,0 +1,564 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1e1e1e;
+    font-family: sans-serif;
+    color: #a0a0a0;
+    line-height: 1.6;
+}
+
+.main-container{
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 350px 1fr;
+    gap: 50px;
+    padding-top: 40px;
+    margin: auto;
+}
+
+.sidebar{
+    height: 90vh;
+    background-color: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 16px;
+    padding: 40px;
+    position: sticky;
+    top: 40px;
+}
+
+.main-content{
+    background-color: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 16px;
+    padding: 40px;
+}
+
+
+/* Profile section */
+
+.profile{
+    text-align: center;
+    
+}
+
+.profile img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 1px solid #1a1a1a;
+    box-shadow: 0px 0px 10px 5px rgba(22, 108, 221, 0.3);
+}
+
+.profile h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #e0e0e0;
+}
+
+.profile p{
+    background-color: #1e1e1e;
+    padding: 5px 15px;
+    color: #FFBF00;
+    border: 1px solid #3a3a3a;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+/* Contact information */
+
+.contact{
+    margin-top: 30px; 
+    border-top: 2px solid #3a3a3a;
+    padding-top: 20px;
+}
+
+.label{
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #a0a0a0;
+}
+
+.value{
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+.email,.phone{
+    margin-bottom: 10px;
+}
+
+
+/* social media */
+
+.social{
+    margin-top: 30px; 
+    border-top: 2px solid #3a3a3a;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.social img{
+    height: 24px;
+    width: 24px;
+    margin-left: 5px;
+    filter: grayscale(1) invert(0.7);
+    transition: filter 0.3s ease;
+}
+
+.social img:hover{
+    filter: grayscale(0) invert(0);
+}
+
+
+
+/* main content */
+
+/* Navigation ko */
+
+#navigation{
+    border-bottom: 2px solid #3a3a3a;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #a0a0a0;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.active, nav a:hover{
+    color:#FFBF00;
+}
+
+
+/* About me */
+
+.heading{
+    color: #e0e0e0;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.line{
+    width: 40px;
+    height: 5px;
+    background-color: yellow;
+    margin-bottom: 15px;
+}
+
+.content{
+    text-align: justify;
+    color: #a0a0a0;
+}
+
+#about{
+    margin-bottom: 40px;
+}
+
+
+
+/* skills sections */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+}
+
+.item{
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #3a3a3a;
+    background-color: #1e1e1e;
+    text-align: center;
+    margin-top: 20px;
+    transition: transform 0.3s ease, boxshadow 0.3s ease;
+    box-shadow: rgb(82, 200, 235);
+    box-shadow: 0px 0px 10px 5px rgb(3, 66, 93);
+}
+
+.item img{
+    height: 48px;
+    width: 48px;
+    filter: invert(75%) sepia(50%) saturate(1000%) hue-rotate(350deg) brightness(110%) contrast(101%);
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 10px 5px rgba(226, 64, 164, 0.3);
+}
+
+.item h3{
+    font-size: 0.9rem;
+    font-weight: 500;
+
+}
+
+.item:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+}
+
+
+/* Education */
+
+#education{
+    margin-top: 30px;
+}
+
+.edtech{
+    position: relative;
+    margin-top: 20px;
+}
+
+.year{
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    margin-bottom: 5px;
+}
+
+.degree{
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.college{
+    font-style: italic;
+    color: #a0a0a0;
+    margin-bottom: 10px;
+}
+
+.learning{
+    color: #a0a0a0;
+}
+
+.edfirst{
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 25px;
+}
+.edsecond{
+    margin-bottom: 30px;
+    position:relative;
+    padding-left: 25px;
+
+}
+.edthird{
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.goal{
+    height: 15px;
+    width: 15px;
+    border: 3px solid #FFBF00;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    z-index: 10;
+}
+
+.liner{
+    position: absolute;
+    width: 2px;
+    top: 0px;
+    bottom: 0px;
+    left: 5.99px;
+    border: 2px solid #3a3a3a;
+}
+
+
+/* Certification */
+
+.certificate{
+    margin-bottom: 30px;
+    padding-left: 25px;
+}
+
+
+
+/* TO MAKE RESPONSIVE */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Main Container */
+.main-container {
+    width: 95%;
+    max-width: 1200px;
+    grid-template-columns: minmax(0, 350px) minmax(0, 1fr);
+}
+
+
+.sidebar,
+.main-content {
+    min-width: 0;
+}
+
+/* Long email and text adjustment */
+.value {
+    overflow-wrap: anywhere;
+}
+
+.content,
+.learning {
+    overflow-wrap: break-word;
+}
+
+/* TABLET RESPONSIVE */
+
+@media screen and (max-width: 1024px) {
+
+    .main-container {
+        grid-template-columns: 280px minmax(0, 1fr);
+        gap: 25px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .sidebar {
+        height: auto;
+        padding: 25px;
+        position: sticky;
+        top: 20px;
+    }
+
+    .main-content {
+        padding: 25px;
+    }
+
+    .profile h2 {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .item {
+        padding: 15px 10px;
+    }
+
+    .heading {
+        font-size: 1.7rem;
+    }
+}
+
+/* MOBILE RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
+    .main-container {
+        width: 92%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    /* Sidebar moves to the top */
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        padding: 25px 20px;
+        border-radius: 14px;
+    }
+
+    .profile img {
+        width: 110px;
+        height: 110px;
+        object-fit: cover;
+    }
+
+    .profile h2 {
+        font-size: 1.3rem;
+        margin-top: 12px;
+    }
+
+    .contact {
+        text-align: left;
+    }
+
+    .social {
+        margin-top: 20px;
+    }
+
+    /* Main content */
+    .main-content {
+        width: 100%;
+        padding: 25px 20px;
+        border-radius: 14px;
+    }
+
+    /* Navigation */
+    #navigation {
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px 22px;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    /* About */
+    .heading {
+        font-size: 1.6rem;
+    }
+
+    .content {
+        text-align: left;
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+
+    #about {
+        margin-bottom: 35px;
+    }
+
+    /* Skills */
+    .grid-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .item {
+        margin-top: 10px;
+        padding: 18px 8px;
+    }
+
+    .item:hover {
+        transform: translateY(-3px);
+    }
+
+    .item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .item h3 {
+        font-size: 0.85rem;
+        overflow-wrap: anywhere;
+    }
+
+    /* Education */
+    .edfirst,
+    .edsecond,
+    .edthird {
+        padding-left: 22px;
+        margin-bottom: 25px;
+    }
+
+    .degree {
+        font-size: 1.05rem;
+    }
+
+    .college,
+    .learning {
+        font-size: 0.9rem;
+    }
+
+    .certificate {
+        padding-left: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+    .main-container {
+        width: 94%;
+        gap: 18px;
+    }
+
+    .sidebar {
+        padding: 22px 15px;
+    }
+
+    .main-content {
+        padding: 22px 15px;
+    }
+
+    .profile h2 {
+        font-size: 1.1rem;
+    }
+
+    .value {
+        font-size: 0.88rem;
+    }
+
+    nav {
+        gap: 12px 16px;
+    }
+
+    nav a {
+        font-size: 0.82rem;
+    }
+
+    .heading {
+        font-size: 1.4rem;
+    }
+
+    .grid-container {
+        gap: 12px;
+    }
+
+    .item {
+        padding: 15px 5px;
+    }
+
+    .item h3 {
+        font-size: 0.78rem;
+    }
+
+    .degree {
+        font-size: 1rem;
+    }
+
+    .learning {
+        font-size: 0.85rem;
+    }
+}
